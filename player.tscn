@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://vad0hhytbx87"]
+
+[ext_resource type="Texture2D" uid="uid://ctgnbgf8tiemq" path="res://kingboo.png" id="2_kne1u"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_e80uo"]
+radius = 28.0
+height = 56.0
+
+[node name="Player" type="CharacterBody2D" unique_id=1109271485]
+position = Vector2(143, 58)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1326150656]
+position = Vector2(503, 419.25)
+scale = Vector2(1, 1.0238096)
+texture = ExtResource("2_kne1u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1498926703]
+position = Vector2(502, 419)
+shape = SubResource("CapsuleShape2D_e80uo")

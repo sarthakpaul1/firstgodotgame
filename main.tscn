@@ -1,3 +1,27 @@
 [gd_scene format=3 uid="uid://bntctt5bv3evo"]
 
+[ext_resource type="PackedScene" uid="uid://vad0hhytbx87" path="res://player.tscn" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://dxnfvlwhkjb24" path="res://player.gd" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://c2dlfy47acsbu" path="res://platform.tscn" id="3_h2yge"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_0xm2m"]
+distance = 0.7857989
+
 [node name="Main" type="Node2D" unique_id=411962056]
+
+[node name="Player" parent="." unique_id=1109271485 instance=ExtResource("1_ig7tw")]
+position = Vector2(154, 32)
+script = ExtResource("2_0xm2m")
+
+[node name="Ground" type="StaticBody2D" parent="." unique_id=1227258207]
+position = Vector2(508, 586)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground" unique_id=1944680362]
+position = Vector2(-181, 57)
+shape = SubResource("WorldBoundaryShape2D_0xm2m")
+
+[node name="Platform" parent="." unique_id=602610598 instance=ExtResource("3_h2yge")]
+position = Vector2(266, 388)
+
+[node name="Platform2" parent="." unique_id=61668423 instance=ExtResource("3_h2yge")]
+position = Vector2(-108, 381)
