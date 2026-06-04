@@ -12,8 +12,8 @@ distance = 0.7857989
 [node name="Main" type="Node2D" unique_id=411962056]
 
 [node name="Background" type="Sprite2D" parent="." unique_id=12935496]
-position = Vector2(577.75006, 323.75)
-scale = Vector2(11.525, 6.5649996)
+position = Vector2(567, 101.99999)
+scale = Vector2(22.31, 14.430002)
 texture = ExtResource("1_lquwl")
 
 [node name="Player" parent="." unique_id=1109271485 instance=ExtResource("1_ig7tw")]
@@ -43,4 +43,4 @@ position = Vector2(-168, 135)
 position = Vector2(173, -50)
 
 [node name="goal" parent="." unique_id=1167947065 instance=ExtResource("5_lquwl")]
-position = Vector2(228, -344)
+position = Vector2(241, -344)
