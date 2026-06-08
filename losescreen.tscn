@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://e4a461b6oqbp"]
+
+[ext_resource type="Script" uid="uid://cdlvu0fhcee5v" path="res://losescreen.gd" id="1_g3uia"]
+
+[node name="losescreen" type="Control" unique_id=1389325590]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_g3uia")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1795344173]
+layout_mode = 0
+offset_left = -122.0
+offset_top = -94.0
+offset_right = 1180.0
+offset_bottom = 677.0
+color = Color(0.8267882, 0, 0.09841899, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1841762043]
+layout_mode = 0
+offset_left = 307.0
+offset_top = 62.0
+offset_right = 834.0
+offset_bottom = 214.0
+theme_override_font_sizes/font_size = 100
+text = "You failed."
+
+[node name="Button" type="Button" parent="." unique_id=423867506]
+layout_mode = 0
+offset_left = 289.0
+offset_top = 315.0
+offset_right = 832.0
+offset_bottom = 460.0
+theme_override_font_sizes/font_size = 75
+text = "Play again?"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://dxnfvlwhkjb24" path="res://player.gd" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://c2dlfy47acsbu" path="res://platform.tscn" id="3_h2yge"]
 [ext_resource type="PackedScene" uid="uid://dlp4lpkmqpc8k" path="res://goal.tscn" id="5_lquwl"]
+[ext_resource type="PackedScene" uid="uid://bkucy8q7hi4m3" path="res://spike.tscn" id="6_7mycd"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_0xm2m"]
 distance = 0.7857989
@@ -12,8 +13,8 @@ distance = 0.7857989
 [node name="Main" type="Node2D" unique_id=411962056]
 
 [node name="Background" type="Sprite2D" parent="." unique_id=12935496]
-position = Vector2(567, 101.99999)
-scale = Vector2(22.31, 14.430002)
+position = Vector2(315, 228)
+scale = Vector2(28.242498, 16.672499)
 texture = ExtResource("1_lquwl")
 
 [node name="Player" parent="." unique_id=1109271485 instance=ExtResource("1_ig7tw")]
@@ -44,3 +45,15 @@ position = Vector2(173, -50)
 
 [node name="goal" parent="." unique_id=1167947065 instance=ExtResource("5_lquwl")]
 position = Vector2(241, -344)
+
+[node name="CharacterBody2D5" parent="." unique_id=1034922647 instance=ExtResource("6_7mycd")]
+position = Vector2(144, -214)
+
+[node name="CharacterBody2D3" parent="." unique_id=275311616 instance=ExtResource("6_7mycd")]
+position = Vector2(-197, -28)
+
+[node name="CharacterBody2D2" parent="." unique_id=1330866744 instance=ExtResource("6_7mycd")]
+position = Vector2(108, 92)
+
+[node name="CharacterBody2D" parent="." unique_id=1275707036 instance=ExtResource("6_7mycd")]
+position = Vector2(-196, 284)
